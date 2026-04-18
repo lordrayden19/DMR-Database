@@ -1,2 +1,7 @@
-# DMR-Database
-DMR-Database
+folder untuk menyimpan data DMR Ids dari beberapa server yaitu dari : 
+- K2PI
+- Krap DMR
+- Kopdarmobile
+- TombolPTT
+
+barangkali ada rekan yang membutuhkan, silahkan dipergunakan dengan bijak.
