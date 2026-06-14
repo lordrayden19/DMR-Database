@@ -714,6 +714,16 @@
 1025108,K26MRK,MUHAMMAD_NANANG_->JEPARA_JATENG
 1025109,DK26AGU,I_WAYAN_PONGKI_S->BADUNG_BALI
 1025110,W26CNF,ABDULLAH_CHANIF->GRESIK_JATIM
+1025111,D26AYV,ANANDA_YUSUF_VAL->BANDUNG_BARAT_JABAR
+1025112,BM26NPC,SUTAN_PL->PEKANBARU_RIAU
+1025113,R26TIA,BOKIS->PURBALINGGA_JATENG
+1025114,D26WDY,WENDY_PRANANDHA->BANDUNG_JABAR
+1025115,D26SUS,UUS_IDRUS->BANDUNG_JABAR
+1025116,T26SAL,SALMON_MUSTAFA->KARAWANG_JABAR
+1025117,Z26WHY,MAMAT_RUHIMAT->TASIKMALAYA_JABAR
+1025118,PB26ATP,ATOK_PRASETYO->SORONG_PAPBADA
+1025119,Z26ASS,ASEPSUWITO->TASIKMALAYA_JABAR
+1025120,AB26YEM,YOSEPH_EKO_MARTO->YOGYAKARTA_YOGYAKARTA
 1032504,PB32KTJ,Diding_Haer_Apandi->Kuningan_JABAR
 1032695,PB32TD,Tata_Dustari->Kuningan_JABAR
 1032734,PB32AM,Aziz_Muzaky->Indramayu_JABAR
@@ -867,6 +877,7 @@
 2110763,JZ01CBD,Munawir_Safitra->Aceh Besar_Aceh
 2110896,JZ01CUV,Ryan_Achdiadsyah->Banda Aceh_Aceh
 2111072,JZ01BBU,Indrawan_->Banda Aceh_Aceh
+2111136,JZ01DGF,Jifri_Rahmadani->BANDA_ACEH_ACEH
 2120052,JZ02EAB,Ali_Akbar->Langkat_SUMUT
 2120116,JZ02RJA,Nimerodi_Hia->Nias Brt_SUMUT
 2120145,JZ02BCG,Zulkarnain_->Medan_SUMUT
@@ -1130,6 +1141,7 @@
 2321069,JZ10DCT,N_Eko_Ajiwihanto->Bogor_JABAR
 2321078,JZ19KXK,Indra_Iswara->Bekasi_JABAR
 2321117,JZ10GMB,Holidibrahim_->Cirebon_JABAR
+2321131,JZ10KDF,Adrianto->Bekasi_JABAR
 2330049,JZ11BSL,Bambang_Pramudya_Aditomo->Tegal_JATENG
 2330149,JZ11DEG,Yuliawan_Hutabara->Tegal_JATENG
 2330175,YG2BWV,Dursi_->Brebes_JATENG
@@ -1162,6 +1174,8 @@
 2331091,JZ11IWX,Sunaryo_->Purworejo_JATENG
 2331094,JZ11GAF,Walan_Yudiana->Tegal_JATENG
 2331114,JZ11VBD,Sugeng_Hariadi->Kebumen_JATENG
+2331130,JZ11DID,Ali_Subekan->Surakarta_JATENG
+2331132,JZ11HAV,Eddy_Kristiadi->Rembang_JATENG
 2340061,JZ12AXC,Bambang_Anggoro_Nugroho->Sleman_YOGYAKARTA
 2340074,JZ12BFW,Starky_Aji->Yogyakarta_YOGYAKARTA
 2340140,JZ12HFT,Jaka_Satmoko->Kulon Progo_YOGYAKARTA
@@ -1171,6 +1185,7 @@
 2340945,JZ12ARG,Wulfram_Margono->Sleman_YOGYAKARTA
 2340978,JZ12ACN,Anthoni_Cahyo_Noorsakti->Bantul_YOGYAKARTA
 2341062,JZ12CAI,Anton_Fatahillah->Sleman_YOGYAKARTA
+2341135,JZ12CCY,Rusnawan_Agung_Wijaya->Yogyakarta_YOGYAKARTA
 2350023,JZ13FJD,Ahmad_Darmawan->Bojonegoro_JATIM
 2350043,JZ13CKB,Hera_Pagiana->Trenggalek_JATIM
 2350048,JZ13CUZ,Prasetyo_Ardi_Nugroho->Ponorogo_JATIM
@@ -1224,6 +1239,7 @@
 2351023,JZ13IZB,Sigit_Wicaksono->Surabaya_JATIM
 2351104,JZ13IGN,Hadi_Fitriyanto->Banyuwangi_JATIM
 2351119,JZ13IGG,Didik_Mudjiono->Surabaya_JATIM
+2351138,JZ13JQL,Firman_Arifianto->SIDOARJO_JATIM
 2360033,JZ30BOQ,Rendy_->Tangerang Sel_Banten
 2360047,JZ30BNH,Alloysius_Ditto_Christianto->Tangerang Sel_Banten
 2360060,JZ30BPA,Erman_Dela_Rosa_Villanueva->Tangerang Sel_Banten
@@ -1443,6 +1459,7 @@
 5100424,YD0SIW,Iwan_Santoso->Jakarta Utr_JAKARTA
 5100426,YG2BTU,Yunior_Nedy_Setiawan->Semarang_JATENG
 5100427,YD6LJK,Muhammad_Haris->Medan_SUMUT
+5100432,YB6MIX,Johan->Medan_SUMUT
 5100434,YD5NMN,Himanto_->Kuantan Singingi_Riau
 5100438,YG1AZZ,Mahyul_Fata->Bekasi_JABAR
 5100443,YF1ARX,Ahmad_Hilyadi->Depok_JABAR
@@ -1486,6 +1503,7 @@
 5100716,YD5NOS,Rio_Arwandita->Dumai_Riau
 5100718,YF3AJE,Ahmad_Darmawan->Bojonegoro_JATIM
 5100720,YB3CII,Betantyo_Wisnu_Hernawan->Bangkalan_JATIM
+5100730,YG3ART,Mufti_Kusuma_Adi->Surabaya_JATIM
 5100740,YB8TB,Bambang_Agussetia->Manado_SULUT
 5100746,YC3CZV,Mochamad_Febrian_Reonaldo->Kediri_JATIM
 5100747,YD2VKB,Starky_Aji->Yogyakarta_YOGYAKARTA
@@ -1800,6 +1818,7 @@
 5101826,YD5BGN,Rio_Trismayandi->Payakumbuh_SUMBAR
 5101834,YB5DOD,Doddy_Syuhendra->Solok Sel_SUMBAR
 5101847,YB1TCA,Entis_Hadist_Sukmawan->Tangerang_Banten
+5101859,YG3BZZ,M_Rizal_Amirudin->Tulungagung_JATIM
 5108888,YD5NPC,Sutan_P_Lubis->Pekanbaru_Riau
 5110000,PC11TS3,Ts3_#NAME?->Aceh Brt Daya_Aceh
 5110022,PC11ZUL,Zulkarnain_Yunus->Lhokeumawe_Aceh
@@ -1822,6 +1841,7 @@
 5110896,PC11RA,Ryan_Achdiadsyah->Banda Aceh_Aceh
 5111072,PC11BBU,Indrawan_->Banda Aceh_Aceh
 5111111,PC11EFY,Yazzid_->Aceh Brt_Aceh
+5111136,PC11JIF,Jifri_Rahmadani->BANDA_ACEH_ACEH
 5120038,PC12BYW,Yustinus_E_Waruwu->Sibolga_SUMUT
 5120052,PC12ALI,Ali_Akbar->Langkat_SUMUT
 5120116,PC12RJA,Nimerodi_Hia->Nias Brt_SUMUT
@@ -1863,6 +1883,7 @@
 5121077,PC12ADC,Agung_Dwi_Cahyadi->Tapanuli Tgh_SUMUT
 5121080,PC12ASH,Andi_S_Harahap->Padang Sidempuan_SUMUT
 5121107,PC12EKO,Eko_Hendharin_Syahputra->Pematang Siantar_SUMUT
+5121133,PC12MIX,Johan->Medan_SUMUT
 5130619,PC13ERY,Erry_Nurdin->Pasaman_SUMBAR
 5130712,PC13IS,Zul_Indra->Pasaman Brt_SUMBAR
 5131116,PC15RIO,Rio_Trismayandi->Payakumbuh_SUMBAR
@@ -2097,6 +2118,7 @@
 5321108,PC32EKY,Irawan_->Cianjur_JABAR
 5321117,PC32IB,Holidibrahim_->Cirebon_JABAR
 5321129,PC32KOM,Komara_Abdulkadir_->Bandung_JABAR
+5321131,PC32KDF,Adrianto->Bekasi_JABAR
 5330049,PC33BSL,Bambang_Pramudya_Aditomo->Tegal_JATENG
 5330117,PC33LEN,Abdul_Hasan->Cilacap_JATENG
 5330212,PC33LID,Joko_Sutanto->Klaten_JATENG
@@ -2174,6 +2196,8 @@
 5331103,PC33PWT,Niko_->Purwokerto_JATENG
 5331112,PC33IW,Iwan_Hermawan->Semarang_JATENG
 5331114,PC33SG,Sugeng_Hariadi->Kebumen_JATENG
+5331130,PC33DID,Ali_Subekan->Surakarta_JATENG
+5331132,PC33HAV,Eddy_Kristiadi->Rembang_JATENG
 5340140,PC34MOK,Jaka_Satmoko->Kulon Progo_YOGYAKARTA
 5340794,PC34DWI,Sunardi_Dwiputranto->Sleman_YOGYAKARTA
 5340797,PC34RP,Raindy_Prima->Sleman_YOGYAKARTA
@@ -2186,6 +2210,7 @@
 5341079,PC34AF,Anton_Fatahillah->Sleman_YOGYAKARTA
 5341099,PC34YOS,Yoseph_Eko_Martono->Yogyakarta_YOGYAKARTA
 5341102,PC34YAY,Anda_Wijanarko->Sleman_YOGYAKARTA
+5341135,PC34RA,Rusnawan_Agung_Wijaya->Yogyakarta_YOGYAKARTA
 5350023,PC35WAN,Ahmad_Darmawan->Bojonegoro_JATIM
 5350048,PC35PAN,Prasetyo_Ardi_Nugroho->Ponorogo_JATIM
 5350079,PC35DWA,Dodik_Widya_Adhitama->Mojokerto_JATIM
@@ -2253,6 +2278,8 @@
 5351118,PC35IRF,Irfan_Fanani->Kediri_JATIM
 5351119,PC35DM,Didik_Mudjiono->Surabaya_JATIM
 5351123,PC35ADI,Panca_->Malang_JATIM
+5351134,PC35ART,Mufti_Kusuma_Adi->Surabaya_JATIM
+5351138,PC35FIR,Firman_Arifianto->SIDOARJO_JATIM
 5360047,PC36DIT,Alloysius_Ditto_Christianto->Tangerang Sel_Banten
 5360101,PC36TOS,Joko_Susanto->Tangerang_Banten
 5360193,PC36KHL,M_Sidik_#NAME?->Tangerang_Banten
