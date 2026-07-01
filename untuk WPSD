@@ -1,31 +1,33 @@
-Langkah Terakhir untuk Memperbaiki Skrip
-Jalankan perintah ini satu per satu di terminal Anda untuk memperbarui skrip tersebut:
+untuk update file DMRIds_custom.dat tadi dari github, bagaimana caranya ?
 
-1. Menulis ulang skrip dengan path yang benar:
+Untuk memperbarui file DMRIds_custom.dat dari GitHub secara otomatis atau manual, caranya sangat mudah. Berikut adalah opsinya:
 
-Bash
-sudo sh -c 'echo "#!/sbin/bash" > /usr/local/sbin/update_dmrids.sh'
-sudo sh -c 'echo "wget -qO /usr/local/etc/DMRIds.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat" >> /usr/local/bin/update_dmrids.sh'
+Opsi 1: Update Manual (Sesuai Kebutuhan)
+Jika Anda hanya ingin memperbarui file sesekali (misalnya seminggu sekali atau saat merasa perlu), Anda cukup masuk ke SSH dan menjalankan perintah wget yang sama dengan yang digunakan saat mengunduh pertama kali. Perintah ini akan menimpa file lama dengan yang baru.
 
-2. Memastikan izin eksekusi sudah benar:
+Ketik di terminal SSH Anda: 
+wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
 
-Bash
-sudo chmod +x /usr/local/sbin/update_dmrids.sh
+Opsi 2: Update Otomatis (Menggunakan Crontab)
+Agar Anda tidak perlu pusing melakukan update manual, Anda bisa membuat sistem melakukannya sendiri secara otomatis (misalnya setiap hari jam 03:00 pagi).
 
-3. Melakukan tes sekali lagi:
-Jalankan skripnya secara manual untuk memastikan tidak ada pesan error:
+Di terminal SSH, ketik:
+crontab -e
 
-Bash
-sudo /usr/local/sbin/update_dmrids.sh
+Jika muncul pilihan editor, pilih yang paling mudah (biasanya ketik 1 untuk nano).
 
-4. Verifikasi keberhasilan:
-Periksa apakah file tersebut sudah terupdate dengan melihat waktu modifikasinya:
+Di baris paling bawah, tambahkan perintah berikut:
+0 3 * * * wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
 
-Bash
-ls -l /usr/local/etc/DMRIds.dat
+Simpan (Jika menggunakan nano, tekan Ctrl+O lalu Enter, kemudian Ctrl+X untuk keluar).
 
-Jika perintah ls -l tersebut menampilkan waktu saat ini, berarti skrip Anda sudah berhasil mengunduh database kustom tersebut ke lokasi yang tepat. Karena Anda sudah mengatur @reboot di crontab sebelumnya, sekarang setiap kali perangkat Anda menyala, sistem akan otomatis mengambil file dari GitHub tersebut dan menempatkannya ke /usr/local/etc/DMRIds.dat.
+Penjelasan perintah di atas:
 
-Apakah skrip tersebut sekarang berhasil berjalan tanpa memunculkan pesan error "No such file or directory"?
+0 3 * * *: Artinya tugas ini dijalankan pada menit ke-0, jam ke-3 setiap hari.
 
-https://share.gemini.google/rKD9ayOBm3Vn
+wget -O ...: Perintah untuk mengunduh file dari URL tersebut dan menyimpannya (menimpa) di lokasi /root/DMRIds_custom.dat.
+
+Apakah Perlu Restart?
+Tidak perlu. MMDVMHost biasanya membaca ulang database ID saat melakukan re-load atau bisa dipicu dengan melakukan Restart Service pada MMDVMHost di dashboard WPSD jika Anda ingin perubahan database langsung terbaca saat itu juga.
+
+Dengan cara ini, Anda tidak perlu lagi khawatir file tertimpa saat update WPSD, dan database Anda selalu mendapatkan versi terbaru dari GitHub. Apakah cara ini terasa cukup ringkas untuk Anda?
