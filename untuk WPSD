@@ -31,3 +31,5 @@ Apakah Perlu Restart?
 Tidak perlu. MMDVMHost biasanya membaca ulang database ID saat melakukan re-load atau bisa dipicu dengan melakukan Restart Service pada MMDVMHost di dashboard WPSD jika Anda ingin perubahan database langsung terbaca saat itu juga.
 
 Dengan cara ini, Anda tidak perlu lagi khawatir file tertimpa saat update WPSD, dan database Anda selalu mendapatkan versi terbaru dari GitHub. Apakah cara ini terasa cukup ringkas untuk Anda?
+
+https://share.gemini.google/ChaBnTEO0t1K
