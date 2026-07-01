@@ -32,4 +32,44 @@ Tidak perlu. MMDVMHost biasanya membaca ulang database ID saat melakukan re-load
 
 Dengan cara ini, Anda tidak perlu lagi khawatir file tertimpa saat update WPSD, dan database Anda selalu mendapatkan versi terbaru dari GitHub. Apakah cara ini terasa cukup ringkas untuk Anda?
 
+cara melihat /root/DMRIds_custom.dat
+
+Untuk melihat isi file tersebut setelah Anda menyimpannya, Anda bisa menggunakan beberapa cara melalui terminal SSH. Berikut adalah cara yang paling umum dan mudah:
+
+1. Menggunakan perintah cat (Melihat seluruh isi file)
+Ini akan menampilkan seluruh isi database di layar terminal Anda. Karena file ini biasanya sangat panjang, teks akan langsung mengalir ke bawah.
+
+Bash
+cat /root/DMRIds_custom.dat
+2. Menggunakan perintah less (Paling disarankan)
+Jika Anda ingin membacanya pelan-pelan (bisa di-scroll naik-turun menggunakan tombol panah keyboard), gunakan perintah ini:
+
+Bash
+less /root/DMRIds_custom.dat
+Cara keluar: Tekan tombol q pada keyboard Anda untuk keluar dari tampilan less.
+
+3. Menggunakan perintah head atau tail (Melihat cuplikan saja)
+Jika Anda hanya ingin memastikan apakah file tersebut sudah terisi dengan benar (tanpa memunculkan ribuan baris data):
+
+Melihat 10 baris pertama:
+
+Bash
+head /root/DMRIds_custom.dat
+Melihat 10 baris terakhir:
+
+Bash
+tail /root/DMRIds_custom.dat
+Tips Jika Anda Menggunakan Windows
+Jika Anda merasa terminal SSH terlalu "kaku" untuk membaca file:
+
+Gunakan aplikasi WinSCP (gratis).
+
+Login menggunakan IP WPSD, username, dan password yang sama dengan SSH.
+
+Di sebelah kanan (tampilan file WPSD), arahkan ke folder /root/.
+
+Klik dua kali pada file DMRIds_custom.dat. File akan terbuka di Text Editor Windows Anda, sehingga jauh lebih mudah dibaca atau dicari (gunakan Ctrl + F untuk mencari ID tertentu).
+
+Apakah Anda berhasil menemukan file tersebut di sana?
+
 https://share.gemini.google/ChaBnTEO0t1K
