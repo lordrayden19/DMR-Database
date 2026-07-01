@@ -4,19 +4,19 @@ Jalankan perintah ini satu per satu di terminal Anda untuk memperbarui skrip ter
 1. Menulis ulang skrip dengan path yang benar:
 
 Bash
-sudo sh -c 'echo "#!/bin/bash" > /usr/local/bin/update_dmrids.sh'
+sudo sh -c 'echo "#!/sbin/bash" > /usr/local/sbin/update_dmrids.sh'
 sudo sh -c 'echo "wget -qO /usr/local/etc/DMRIds.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat" >> /usr/local/bin/update_dmrids.sh'
 
 2. Memastikan izin eksekusi sudah benar:
 
 Bash
-sudo chmod +x /usr/local/bin/update_dmrids.sh
+sudo chmod +x /usr/local/sbin/update_dmrids.sh
 
 3. Melakukan tes sekali lagi:
 Jalankan skripnya secara manual untuk memastikan tidak ada pesan error:
 
 Bash
-sudo /usr/local/bin/update_dmrids.sh
+sudo /usr/local/sbin/update_dmrids.sh
 
 4. Verifikasi keberhasilan:
 Periksa apakah file tersebut sudah terupdate dengan melihat waktu modifikasinya:
