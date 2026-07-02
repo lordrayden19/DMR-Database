@@ -1,0 +1,39 @@
+Cara paling efektif untuk mencegah file country.csv dan countries.json tertimpa saat update WPSD (software digital voice amatir radio berbasis Linux / Pi-Star) adalah dengan mengunci file menggunakan perintah chattr +i. [1] 
+Sistem update WPSD biasanya berjalan menggunakan hak akses root dan otomatis mengunduh serta menimpa file data default. Dengan memberikan atribut immutable (tidak dapat diubah), sistem operasi akan memblokir program apa pun—termasuk skrip updater WPSD—untuk menghapus, memodifikasi, atau menimpa file tersebut.
+Berikut adalah langkah-langkah mudah untuk melakukannya:
+## 1. Kunci File (Gunakan chattr +i)
+Buka terminal atau SSH ke perangkat WPSD Anda, lalu jalankan perintah berikut secara bergantian:
+
+sudo chattr +i /usr/local/etc/country.csv
+sudo chattr +i /usr/local/etc/countries.json
+
+Catatan: Atribut +i (immutable) membuat file menjadi "kebal". File tidak bisa diubah bahkan oleh pengguna root sekalipun sampai kuncinya dibuka kembali.
+## 2. Cara Mengecek Apakah Sudah Terkunci
+Untuk memastikan file sudah sukses dikunci dan aman dari update, gunakan perintah lsattr:
+
+lsattr /usr/local/etc/country.csv /usr/local/etc/countries.json
+
+Jika berhasil, Anda akan melihat huruf i pada baris statusnya, contohnya seperti ini:
+
+----i---------e------- /usr/local/etc/country.csv
+----i---------e------- /usr/local/etc/countries.json
+
+------------------------------
+## 💡 Tips Tambahan: Cara Mengedit File di Kemudian Hari
+Jika di masa depan Anda ingin mengubah isi data negara secara manual di kedua file tersebut, Anda harus membuka kuncinya terlebih dahulu sebelum mengedit.
+
+* Membuka kunci (bisa diedit kembali):
+
+sudo chattr -i /usr/local/etc/country.csv
+sudo chattr -i /usr/local/etc/countries.json
+
+* Mengunci kembali (setelah selesai diedit):
+
+sudo chattr +i /usr/local/etc/country.csv
+sudo chattr +i /usr/local/etc/countries.json
+
+
+Dengan metode ini, Anda tidak perlu khawatir modifikasi data negara Anda hilang setiap kali menjalankan perintah update WPSD.
+Apakah Anda juga ingin membuat skrip otomatis agar file ini dicadangkan (backup) secara berkala sebelum update berjalan?
+
+[1] [https://forums.opensuse.org](https://forums.opensuse.org/t/how-to-prevent-system-over-writes-to-customized-etc-sysconfig-files/71189)
