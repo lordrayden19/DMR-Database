@@ -33,3 +33,11 @@ Catatan Penting
 Setelah melakukan perubahan ini, Anda perlu me-reboot perangkat (sudo reboot) untuk memastikan skrip berjalan.
 
 https://share.gemini.google/hc02UUZyR1jM
+
+
+Perintah untuk Mengatur Jadwal 60 Menit:
+Jika Anda ingin memperbarui jadwal dari 10 menit menjadi 60 menit, jalankan perintah ini di terminal:
+
+sudo crontab -l | grep -v "country_custom" | sudo crontab -
+(sudo crontab -l 2>/dev/null; echo "0 * * * * cp /home/pi-star/country_custom.csv /usr/local/etc/country.csv"; echo "0 * * * * cp /home/pi-star/countries_custom.json /usr/local/etc/countries.json") | sudo crontab -
+
