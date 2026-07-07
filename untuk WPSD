@@ -7,6 +7,8 @@ Jika Anda hanya ingin memperbarui file sesekali (misalnya seminggu sekali atau s
 
 Ketik di terminal SSH Anda: 
 wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
+atau 
+wget -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
 
 Opsi 2: Update Otomatis (Menggunakan Crontab)
 Agar Anda tidak perlu pusing melakukan update manual, Anda bisa membuat sistem melakukannya sendiri secara otomatis (misalnya setiap hari jam 03:00 pagi).
