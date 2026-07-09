@@ -24,6 +24,8 @@ atau
 wget --header="Authorization: token ghp_TOKEN_ANDA_DI_SINI" -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
 atau 
 wget --header="Authorization: token ghp_TOKEN_ANDA_DI_SINI" -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
+
+
 Apakah Perlu Restart?
 Tidak perlu. MMDVMHost biasanya membaca ulang database ID saat melakukan re-load atau bisa dipicu dengan melakukan Restart Service pada MMDVMHost di dashboard WPSD jika Anda ingin perubahan database langsung terbaca saat itu juga.
 
