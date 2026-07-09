@@ -9,34 +9,21 @@ Ketik di terminal SSH Anda:
 wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
 atau 
 wget -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
-
-kalau perintah diatas gagal (kemungkinan terlalu banyak yang tarik data dari github)
-
-coba yang ini
-Ketik di terminal SSH Anda: 
+atau 
 wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
 atau 
 wget -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
 
-Opsi 2: Update Otomatis (Menggunakan Crontab)
-Agar Anda tidak perlu pusing melakukan update manual, Anda bisa membuat sistem melakukannya sendiri secara otomatis (misalnya setiap hari jam 03:00 pagi).
+kalau perintah diatas gagal (kemungkinan terlalu banyak yang tarik data dari github dan harus menggunakan token)
+token bisa minta ke pemilik REPO
 
-Di terminal SSH, ketik:
-crontab -e
-
-Jika muncul pilihan editor, pilih yang paling mudah (biasanya ketik 1 untuk nano).
-
-Di baris paling bawah, tambahkan perintah berikut:
-0 3 * * * wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
-
-Simpan (Jika menggunakan nano, tekan Ctrl+O lalu Enter, kemudian Ctrl+X untuk keluar).
-
-Penjelasan perintah di atas:
-
-0 3 * * *: Artinya tugas ini dijalankan pada menit ke-0, jam ke-3 setiap hari.
-
-wget -O ...: Perintah untuk mengunduh file dari URL tersebut dan menyimpannya (menimpa) di lokasi /root/DMRIds_custom.dat.
-
+wget --header="Authorization: token ghp_TOKEN_ANDA_DI_SINI" -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat 
+atau 
+wget --header="Authorization: token ghp_TOKEN_ANDA_DI_SINI" -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
+atau
+wget --header="Authorization: token ghp_TOKEN_ANDA_DI_SINI" -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
+atau 
+wget --header="Authorization: token ghp_TOKEN_ANDA_DI_SINI" -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
 Apakah Perlu Restart?
 Tidak perlu. MMDVMHost biasanya membaca ulang database ID saat melakukan re-load atau bisa dipicu dengan melakukan Restart Service pada MMDVMHost di dashboard WPSD jika Anda ingin perubahan database langsung terbaca saat itu juga.
 
