@@ -10,6 +10,13 @@ wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/D
 atau 
 wget -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
 
+kalau perintah diatas gagal
+coba yang ini
+Ketik di terminal SSH Anda: 
+wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
+atau 
+wget -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
+
 Opsi 2: Update Otomatis (Menggunakan Crontab)
 Agar Anda tidak perlu pusing melakukan update manual, Anda bisa membuat sistem melakukannya sendiri secara otomatis (misalnya setiap hari jam 03:00 pagi).
 
