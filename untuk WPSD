@@ -10,7 +10,8 @@ wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/D
 atau 
 wget -O /usr/local/etc/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds.dat
 
-kalau perintah diatas gagal
+kalau perintah diatas gagal (kemungkinan terlalu banyak yang tarik data dari github)
+
 coba yang ini
 Ketik di terminal SSH Anda: 
 wget -O /root/DMRIds_custom.dat https://raw.githubusercontent.com/lordrayden19/DMR-Database/refs/heads/main/DMRIds1.dat
